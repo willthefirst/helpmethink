@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        .highlight {
+            transition: color 500ms ease-out;
+        }
+
+        .highlight-active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="userInput" rows="10" cols="50" placeholder="Type here..."></textarea>
+    <div>
+        <label for="delimiters">Delimiters (comma-separated): </label>
+        <input type="text" id="delimiters" value=".?!">
+    </div>
+    <div>
+        <label for="sentenceCount">Number of sentences to send for correction: </label>
+        <input type="number" id="sentenceCount" value="1" min="1">
+    </div>
+    <div id="replacedText" style="margin-top: 20px;"></div>
+    <script src="main.js"></script>
+</body>
+</html>
